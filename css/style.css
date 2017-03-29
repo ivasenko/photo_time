@@ -1,0 +1,426 @@
+@font-face{
+	font-family: 'GothamRounded-Medium';
+	src: url('../fonts/GothamRounded/GothamRounded-Medium.otf') format('opentype');
+	font-weight: normal;  
+	font-style: normal;
+}
+@font-face{
+	font-family: 'GothamRounded-Book';
+	src: url('../fonts/GothamRounded/GothamRounded-Book.otf') format('opentype'),
+	url('../fonts/GothamRounded/GothamRounded-Book.woff') format('woff');
+	font-weight: normal;  
+	font-style: normal;
+}
+@font-face{
+	font-family: 'GothamRounded-Bold';
+	src: url('../fonts/GothamRounded/GothamRounded-Bold.otf') format('opentype'),
+	url('../fonts/GothamRounded/GothamRounded-Bold.woff') format('woff');
+	font-weight: bold;  
+	font-style: normal;
+}
+body{
+	/*margin: 0 auto;*/
+	width: 1280px;
+	font-family: 'GothamRounded-Bold'; 
+	
+
+}
+.header-paragraph p,
+.community-info-text,
+input[type="email"],
+.download-text{
+	font-family: 'GothamRounded-Medium'; 
+	font-weight: normal;
+}
+.container{
+	/*margin: 0 auto;*/
+	padding: 0 130px;
+}
+.special-span{
+	font-family: 'GothamRounded-Bold';
+	font-weight: bold;
+}
+/****HEADER***/
+.header{
+	height: 740px;
+	background: url(../img/header_bg.png);
+	color: #fff;
+}
+.nav-list{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 52px;
+}
+.nav-list-link{
+	font-family: 'GothamRounded-Bold';
+	text-transform: uppercase;
+	font-size: 16px;
+	/*font-weight: 600;*/
+	font-weight: bold;  
+	letter-spacing: 2px;
+	margin: 0 45px;
+	text-decoration: none;
+	color: #fff;
+}
+.nav-list-item:nth-child(3){
+	align-self: flex-start;	
+}
+.header-heading h1{
+	font-family: 'GothamRounded-Bold';
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 228px;
+}
+
+.header-paragraph p{
+	margin-top: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+.header-button{
+	text-align: center;
+	margin-top: 26px;
+	cursor: pointer;
+
+}
+.header-button button{
+padding: 18px 26px 16px;
+}
+.header-button button,
+.presentation-text-button button,
+.design-text-button button{
+	font-family: 'GothamRounded-Bold';
+	/*padding: 17px 28px;*/
+	background: #16a085;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline: none;
+}
+.header-button button:hover,
+.presentation-text-button button:hover,
+.design-text-button button:hover{
+	background: #1abc9c;
+}
+
+.header-icons{
+	padding-bottom: 22px;
+}
+.header-icons-list{
+	margin-top: 221px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-icons-item{
+	margin: 0 8px;
+}
+
+
+/****PRESENTATION****/
+.presentation{
+	height: 497px;
+	background: #f5f6f7;
+	background-image: url(../img/iphone_in_hand.png);
+	background-position: 80% -47%;
+	background-repeat: no-repeat;
+}
+.presentation-wrapper{
+	display: flex;
+}
+.presentation-text{
+	width: 480px;
+}
+.presentation-text-heading,
+.design-text-heading{
+	font-family: 'GothamRounded-Bold';
+	margin-top: 116px;
+	color: #16a085;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.presentation-text-text,
+.design-text-text{
+	font-family: 'GothamRounded-Book';
+	font-weight: normal;
+	margin-top: 43px;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+}
+/*.presentation-img{
+	width: 676px;
+	height: 498px;
+	background-image: url(../img/iphone_in_hand.png);
+	background-position: 44% -48%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}*/
+.presentation-text-button button{
+	margin-top: 66px;
+	padding: 18px 38px 16px;
+	cursor: pointer;
+}
+
+/****DESIGN****/
+.design-container{
+	padding: 0 70px 0 130px;
+}
+.design-wrapper{
+	padding-top: 140px;
+	display: flex;
+}
+.design-img{
+	height: 412px;
+	margin-left: -6px;
+	margin-right: 328px;
+	margin-top: 5px;
+
+}
+.design-text-heading{
+	margin-top: 2px;
+}
+
+.design-text-text{
+	margin-top: 38px;
+	line-height: 22px;
+}
+.design-text-button button{
+	margin-top: 37px;
+	border-radius: 0;
+	padding: 18px 42px 17px;
+	cursor: pointer;
+}
+.design-text-num{
+	font-size: 12px;
+	margin-top: 45px;
+	letter-spacing: 2px;
+}
+.design-text-arrows{
+	margin-top: 8px;
+}
+.design-arrow-left{
+	margin-right: 18px;
+}
+/****COMMUNITY****/
+.community{
+	background: #f5f6f7;
+	position: relative;
+	z-index: 3;
+
+}
+.community-arrows{
+	padding-top: 95px;
+	text-align: right;
+}
+.community-arrow-left{
+	margin-right: 11px;
+}
+.community-info-img{
+	margin-top: 43px;
+    padding: 0px 57px;
+}
+.community-info-heading{
+	font-family: 'GothamRounded-Bold';
+	margin-top: 26px;
+	text-align: justify;
+    letter-spacing: 2px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.community-info-text{
+	font-size: 10px;
+	margin-top: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 11px;
+}
+.community-slider{
+	display: flex;
+	margin-top: 8px;
+	padding-bottom: 118px;
+}
+.community-info{
+	margin-right: 81px;
+}
+.community-photo1{
+	margin-right: 24px;
+}
+
+/****MAIL***/
+.mail{
+	background: url(../img/form_bg.png);
+	background-repeat: no-repeat;
+	
+}
+.mail-heading{
+	font-family: 'GothamRounded-Bold';
+	padding-top: 347px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 3px;
+}
+form{
+	margin-top: 31px;
+	margin-left: 336px;
+	padding-bottom: 325px;
+}
+input[type="email"]{
+	padding: 20px 0px 20px 21px;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 3px;
+	border: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+}
+.icon-check{
+	background: #16a085;
+	padding: 19px 19px 21px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: -16px;
+}
+
+/***DOWNLOAD***/
+.download{
+	background: #f5f6f7;
+}
+.download-heading{
+	font-family: 'GothamRounded-Bold';
+	padding-top: 90px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.download-text{
+	font-size: 12px;
+	line-height: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 60px;
+	margin-top: 7px;
+	letter-spacing: 2px
+}
+.download-buttons{
+	display: flex;
+	align-items: flex-end;
+	margin-top: 41px;
+	padding-bottom: 117px;
+}
+.download-apple{
+	margin-left: 196px;
+	margin-right: 27px;
+}
+.btn-apple,
+.btn-android{
+	font-family: 'GothamRounded-Bold';
+	background: #1abc9c;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+}
+.btn-apple:hover,
+.btn-android:hover{
+	background: #16a085;
+}
+.btn-apple span{
+	margin-right: 81px;
+	margin-left: 15px;
+}
+.btn-android span{
+	margin-right: 85px;
+	margin-left: 22px;
+}
+.apple,
+.android{
+	display: inline-block;
+	background: #16a085;
+	padding: 18px 17px 12px;
+	border: none;
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: -9px;
+}
+.android{
+	padding: 12px 16px 13px;
+}
+
+/****FOOTER***/
+.footer-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 35px;
+}
+.footer-contacts-list{
+	display: flex;
+	margin-top: 42px;
+}
+.footer-contacts-link{
+	font-family: 'GothamRounded-Bold';
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 1px;
+	padding: 0 12px;
+	border-right: 2px solid #1abc9c;
+
+}
+.first-contacts-link{
+	padding-left: 0;
+}
+.last-contacts-link{
+	border-right: none;
+}
+.footer-rights{
+	font-family: 'GothamRounded-Bold';
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 21px;
+}
+.footer-img{
+	margin-top: 37px;
+}
+.footer-img img{
+	display: inline-block;
+	margin-right: -4px;
+}
